@@ -17,33 +17,45 @@ public class Post {
     protected int bd;// bit depth
     protected int fr;//frame rate
 
+    //@returns autor del post
     protected String getAutor(){
         return autor;
     }
 
+    //@returns fecha de publicación del post
     protected LocalDateTime getFecha(){
         return fecha;
     }
+
+    //@returns hashtags del post
     protected ArrayList<String> getHash(){
         return hash;
     }
 
+    //@returns likes del post
     protected int getLikes(){
         return likes;
     }
 
+    //@returns texto del post
     protected String getTexto(){
         return texto;
     }
 
+    //@returns tipo del post
     protected String getTipo(){
         return tipo;
     }
 
+    //@returns los comentarios del post
     protected ArrayList<String> getComentarios(){
         return comentarios;
     }
+
+
     //Se agregó el parámetro n para ubicar si se refiere a un audio, video o imagen.
+    //@params int n para identificar el tipo de multimedia
+    //@returns los detalles según el tipo de multimedia
     protected String[] getDetalles(int n){
         String[] a = new String[4];
         a[0] = kb+"";
@@ -66,6 +78,7 @@ public class Post {
         likes++;
     }
 
+    //@params el comentario a ingresar en el post.
     protected void comentarios(String s){
         comentarios.add(s);
     }

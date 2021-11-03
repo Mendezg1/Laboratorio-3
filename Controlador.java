@@ -1,6 +1,9 @@
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-
+/*
+Programa: Laboratorio 3
+Programador: Ricardo Méndez - 21289
+*/
 public class Controlador {
     static public void main(String args[]){
         Vista v = new Vista();
